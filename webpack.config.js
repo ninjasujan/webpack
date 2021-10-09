@@ -11,8 +11,11 @@ module.exports = {
 			},
 		],
 	},
+	resolve: {
+		extensions: [".ts", ".js"],
+	},
 	output: {
-		publicPath: "dist/",
+		publicPath: "dist",
 		filename: "bundle.js",
 		path: path.resolve(__dirname, "dist"),
 	},
